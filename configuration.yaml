@@ -1,2 +1,9 @@
 telegram:
   http-api: TELEGRAM_TOKEN
+  configuration:
+    register:
+      password:
+        maximum_length: 20
+        minimum_length: 4
+    request_params:
+      retries_count: 3

@@ -21,7 +21,7 @@ func main() {
 
 	initTelegramMessageProcessing()
 
-	ctx, _ := signal.NotifyContext(context.Background(), syscall.SIGTERM)
+	ctx, _ := signal.NotifyContext(context.Background(), syscall.SIGTERM, syscall.SIGINT)
 	<-ctx.Done()
 }
 
